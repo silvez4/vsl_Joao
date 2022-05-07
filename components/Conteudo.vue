@@ -1,11 +1,19 @@
 <template>
-  <div class="text-center">
+  <div
+    class="
+      text-center
+      justify-center
+      align-center
+      mt-8
+      border-t-4 border-yellow-400
+    "
+  >
     <h2
       class="
         font-mono font-black
         italic
         underline
-        mt-8
+        text-white
         py-10
         px-6
         mb-0.5
@@ -14,7 +22,7 @@
         lg:text-4xl
       "
     >
-      O Que será ensinado no curso
+      O Que você irá aprender
     </h2>
     <div
       class="
@@ -56,21 +64,29 @@
         </h3>
       </div>
     </div>
+    <BtnCompra />
+    <Footer />
   </div>
 </template>
 
 <script>
+import BtnCompra from "./BtnCompra.vue";
 export default {
+  components: { BtnCompra },
   name: "Conteudo",
 };
 </script>
 
 <style>
 .um,
+.tres {
+  border-left: 2px black solid;
+  border-bottom: 2px black solid;
+}
 .dois,
-.tres,
 .quatro {
-  border: 2px black solid;
+  border-right: 2px black solid;
+  border-bottom: 2px black solid;
 }
 .um {
   grid-area: um;
@@ -95,5 +111,21 @@ export default {
     ". dois"
     "tres ."
     ". quatro";
+}
+@media (max-width: 600px) {
+  .conteudo {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "um"
+      "dois"
+      "tres"
+      "quatro";
+  }
+  .um,
+  .dois,
+  .tres,
+  .quatro {
+    padding: 2rem 0.25rem;
+  }
 }
 </style>

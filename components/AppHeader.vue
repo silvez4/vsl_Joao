@@ -12,11 +12,11 @@
           md:text-2xl
           lg:text-4xl
           text-center text-white
+          rounded-b-full
         "
       >
         Aprenda Tudo o Que Precisa Para Ter uma Loja de Sucesso
       </h1>
-      <h1>DOISSSSSS</h1>
     </div>
     <div
       class="font-mono bg-grey text-center py-5 text-base md:text-lg lg:text-xl"
@@ -47,7 +47,7 @@ export default {
   name: "Hero",
   data() {
     return {
-      timerCount: 0,
+      timerCount: 15,
     };
   },
 
@@ -67,16 +67,12 @@ export default {
 </script>
 
 <style>
-.header {
-  grid-auto-columns: 1fr 300px;
-  grid-row: 1fr;
-}
 .div-btn {
   text-align: center;
-  padding: 1.5rem 0;
+  padding-top: 1.5rem;
   background: #0f2027; /* fallback for old browsers */
-  background: -webkit-linear-gradient(black, #2c5364, #203a43);
-  background: linear-gradient(black, #2c5364, #203a43);
+  background: -webkit-linear-gradient(black, grey);
+  background: linear-gradient(black, rgb(87, 87, 87));
 }
 .slide-fade-enter-active {
   transition: all 1s ease;

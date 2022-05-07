@@ -2,7 +2,7 @@
   <div class="mt-8">
     <a class="comprar" href="#">
       <span class="top-key"></span>
-      <span class="text">QUERO MINHA VAGA</span>
+      <span class="text">GARANTA SUA VAGA</span>
       <span class="bottom-key-1"></span>
       <span class="bottom-key-2"></span>
     </a>
